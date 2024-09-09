@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Center - Fitness ve Sağlık</title>
+    <meta name="description" content="FitLife Center - En iyi fitness eğitmenleri ile sağlıklı yaşama adım atın.">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg justify-content-between">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <h1>FitLife Center</h1>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="pricing-section tariffs">
+    <h2 class="section-title">Basit ve Erişilebilir Fiyatlandırma</h2>
+    <p class="section-subtitle">Başlamak ve büyümek için uygun fiyatlarla! Şimdi başla!</p>
+
+    <div class="pricing-cards-container">
+        <div class="pricing-card">
+            <h3>Temel</h3>
+            <p class="price">₼200 <span>aylık</span></p>
+            <a href="form.html" class="btn">Başla</a>
+            <ul class="features">
+                <li>Fitness Merkezi Kullanımı</li>
+                <li>1 Grup Dersi Haftada</li>
+                <li>Sauna Erişimi</li>
+                <li>4 Eğitim Seansı Aylık</li>
+            </ul>
+        </div>
+        <div class="pricing-card highlighted">
+            <h3>Pro</h3>
+            <p class="price">₼500 <span>aylık</span></p>
+            <a href="form.html" class="btn">Başla</a>
+            <ul class="features">
+                <li>Temel Plandaki Her Şey</li>
+                <li>Haftada 3 Grup Dersi</li>
+                <li>Sınırsız Sauna Erişimi</li>
+                <li>10 Eğitim Seansı Aylık</li>
+                <li>Özel Diyet Planı</li>
+            </ul>
+        </div>
+        <div class="pricing-card">
+            <h3>İşletme</h3>
+            <p class="price">₼900 <span>aylık</span></p>
+            <a href="form.html" class="btn">Başla</a>
+            <ul class="features">
+                <li>Pro Plandaki Her Şey</li>
+                <li>Haftada Sınırsız Grup Dersi</li>
+                <li>Özel Antrenör</li>
+                <li>Kişisel Program Oluşturma</li>
+                <li>VIP Sauna Erişimi</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="alt-bolum">
+    <div class="d-flex justify-content-center flex-column-mob">
+        <a href="policy.html" class="text-white m-2">Gizlilik Politikası</a>
+        <a href="terms.html" class="text-white m-2">Kullanım Koşulları</a>
+        <a href="disclaimer.html" class="text-white m-2">Sorumluluk reddi beyanı</a>
+    </div>
+    <p>&copy; 2024 FitLife Center. Tüm hakları saklıdır. | Həsənbəy Zərdabi ave 3166, Baku, Azerbaijan |
+        +994705367575 </p>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+    <p>Web sitemiz, kullanıcı deneyiminizi geliştirmek için çerezleri kullanır. Web sitemizi kullanarak çerez
+        politikamızı kabul etmiş olursunuz. <a href="/privacy-policy">Daha fazla bilgi edinin</a>.</p>
+    <button id="acceptCookies" class="accept-btn">Kabul Et</button>
+</div>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        if (!localStorage.getItem("cookiesAccepted")) {
+            document.getElementById("cookieBanner").style.display = "block";
+        }
+
+        document.getElementById("acceptCookies").addEventListener("click", function () {
+
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookieBanner").style.display = "none";
+        });
+    });
+</script>
+
+</body>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FitLife Center",
+        "url": "",
+        "logo": "/favicon/favicon.ico"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WPHeader",
+        "headline": "FitLife Center",
+        "description": "FitLife Center - En iyi fitness eğitmenleri ile sağlıklı yaşama adım atın.",
+        "url": "",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FitLife Center",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/favicon/favicon.ico"
+            }
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "FitLife Center",
+        "description": "FitLife Center - En iyi fitness eğitmenleri ile sağlıklı yaşama adım atın.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FitLife Center"
+        },
+        "license": "A license document that applies to this content, typically indicated by URL"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "",
+        "hasPart": [
+            {
+                "@type": "WebPage",
+                "name": "Home",
+                "url": ""
+            },
+            {
+                "@type": "WebPage",
+                "name": "Tariffs",
+                "url": "/tariffs.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Form",
+                "url": "/form.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Policy",
+                "url": "/policy.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Terms of Conditions",
+                "url": "/terms.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Disclaimer",
+                "url": "/disclaimer.html"
+            }
+        ]
+    }
+</script>
+</html>
